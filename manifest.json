@@ -12,12 +12,6 @@
       "js": [ "js/content.js" ],
       "matches": [ "http://*/*", "https://*/*" ],
       "run_at": "document_start"
-   }, {
-      "all_frames": true,
-      "exclude_globs": [ "*://*.zcool.com.cn/*", "*://dexknows.whitepages.com/*", "*://tech.sina.com.cn/*" ],
-      "js": [ "support/ext.js", "support/support.js" ],
-      "matches": [ "http://*/*" ],
-      "run_at": "document_start"
    } ],
    "description": "Accidentally closed your last tab? Tired of losing tabs in Incognito? Don't worry, everything is possible with this sexy extension!",
    "icons": {
@@ -31,5 +25,5 @@
    "permissions": [ "tabs", "unlimitedStorage", "chrome://favicon/", "webNavigation", "webRequest", "webRequestBlocking", "http://*/*", "https://*/*" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "7.5.4",
-   "web_accessible_resources": [ "blank.html", "support/pages/adoptions.html", "support/pages/privacy_policy.html" ]
+   "web_accessible_resources": [ "blank.html" ]
 }

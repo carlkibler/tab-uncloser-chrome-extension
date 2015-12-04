@@ -67,13 +67,11 @@ function resetData()
 
   /// !IMPORTANT
   /// have to save all settings we need before clearing localStorage!
-  var support         = localStorage.support;
   var thank_you_shown = localStorage.thank_you_shown;
   var install_date    = localStorage.install_date;
 
 	localStorage.clear();
 
-  localStorage.support = (support == "true");
   localStorage.thank_you_shown = (thank_you_shown == "true");
   localStorage.install_date = install_date || +new Date;
 	

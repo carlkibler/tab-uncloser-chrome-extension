@@ -44,7 +44,6 @@ function init() {
 	document.getElementById("disableDClick").checked = settings.disableDClick;
 	document.getElementById("largeRemove").checked = settings.largeRemove;
 
-	document.getElementById("dontsupport").checked = (localStorage.support == "false");///
 	allLoaded=true;
 }
 
@@ -82,8 +81,6 @@ function save() {
 			document.getElementById("saveButton").innerHTML='<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/iPrnduGtgmc?fs=1&amp;hl=en_US&amp;color1=0x3a3a3a&amp;color2=0x999999&autoplay=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/iPrnduGtgmc?fs=1&amp;hl=en_US&amp;color1=0x3a3a3a&amp;color2=0x999999&autoplay=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>';
 		}
 	}
-
-	localStorage.support = !(document.getElementById("dontsupport").checked);///
 
 	localStorage["settings"] = JSON.stringify(settings);
 	localStorage["minimumTabInc"] = 0; //reset this shit, or else some bad stuff can happen
