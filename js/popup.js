@@ -31,7 +31,6 @@ bg.console.log('popup_opened')///
 // Double click restores the last closed tab
 var opened = +new Date;
 function unload() {
-	bg.console.log('popup_closing: ' + (+new Date - opened))///
 	localStorage.lastClosed = +new Date;
 	localStorage.lastOpened = opened;
 	var isFastClose = +new Date - opened < 400;
