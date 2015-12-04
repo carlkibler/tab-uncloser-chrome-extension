@@ -13,17 +13,17 @@
       "matches": [ "http://*/*", "https://*/*" ],
       "run_at": "document_start"
    } ],
-   "description": "Accidentally closed your last tab? Tired of losing tabs in Incognito? Don't worry, everything is possible with this sexy extension!",
+   "description": "Restore your closed tabs easily",
    "icons": {
       "128": "icon-128.png",
       "48": "icon.png"
    },
    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDCeJoAbcT4Dw7Q5V7cnjawrMdzziHk2yJmy5wXsKepPtAXp+QNGH0u8cEzbFbOylVM6F78+/dzXHdc+gJsZ5UqpIx5I6EYnUYb7r2eXuBsW2J+R9BFatZ5fGEDDQs4y77NlPsxJrZYdCOBdWnsebcYJys7dmNQ51LuAet7tRitwIDAQAB",
    "manifest_version": 2,
-   "name": "Sexy Undo Close Tab",
+   "name": "Tab Uncloser",
    "options_page": "options.html",
    "permissions": [ "tabs", "unlimitedStorage", "chrome://favicon/", "webNavigation", "webRequest", "webRequestBlocking", "http://*/*", "https://*/*" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "7.5.4",
+   "version": "1.0",
    "web_accessible_resources": [ "blank.html" ]
 }

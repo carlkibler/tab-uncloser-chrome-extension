@@ -4,7 +4,7 @@ chrome.runtime.sendMessage({log: 'blank loading ' + document.URL});
 
 // chrome-extension://kgbkepbalohojkgjekfbmemdmbapabfg/blank.html
 
-if (!history.state || !history.state.sexyUrl) {
+if (!history.state || !history.state.tabUncloserUrl) {
 
 	chrome.runtime.sendMessage({log: 'blank nostate ' + document.URL});
 
@@ -12,25 +12,25 @@ if (!history.state || !history.state.sexyUrl) {
 	var urls = ['https://www.google.hu/', 'http://www.apple.com/'] 
 
 	// first url in the history
-	history.replaceState({sexyUrl: urls[0]}, '', '');
+	history.replaceState({tabUncloserUrl: urls[0]}, '', '');
 
 	// other ones are pushed after that
 	urls.slice(1).forEach(function (url) {
-		history.pushState({sexyUrl: url}, '', '');
+		history.pushState({tabUncloserUrl: url}, '', '');
 	});
 
 	// current url pushed after all the BACK history
-	history.pushState({sexyUrl: currentUrl}, '', '');
+	history.pushState({tabUncloserUrl: currentUrl}, '', '');
 	window.location.replace(currentUrl);
 }
 
 
 
 window.onpopstate = function (e) {
-	if (e.state && e.state.sexyUrl) {
-		chrome.runtime.sendMessage({log: 'blank popstate ' + e.state.sexyUrl});
-		window.location.replace(e.state.sexyUrl); // replace
-		//document.body.insertAdjacentHTML('afterbegin', '<h1>'+ history.state.sexyUrl || document.URL +'</h1>')
+	if (e.state && e.state.tabUncloserUrl) {
+		chrome.runtime.sendMessage({log: 'blank popstate ' + e.state.tabUncloserUrl});
+		window.location.replace(e.state.tabUncloserUrl); // replace
+		//document.body.insertAdjacentHTML('afterbegin', '<h1>'+ history.state.tabUncloserUrl || document.URL +'</h1>')
 	}
 }
 
