@@ -18,7 +18,6 @@
       "128": "icon-128.png",
       "48": "icon.png"
    },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDCeJoAbcT4Dw7Q5V7cnjawrMdzziHk2yJmy5wXsKepPtAXp+QNGH0u8cEzbFbOylVM6F78+/dzXHdc+gJsZ5UqpIx5I6EYnUYb7r2eXuBsW2J+R9BFatZ5fGEDDQs4y77NlPsxJrZYdCOBdWnsebcYJys7dmNQ51LuAet7tRitwIDAQAB",
    "manifest_version": 2,
    "name": "Tab Uncloser",
    "options_page": "options.html",
