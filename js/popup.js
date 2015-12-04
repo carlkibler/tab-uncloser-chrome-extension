@@ -56,28 +56,6 @@ if (!settings.disableDClick && isReopenedFast && wasLastCloseFast) {
 	window.close();
 }
 
-/*
-// NEW NOTE: it seems now all platforms match in their behavior
-//           the popup reopens on click, if it was already open
-// Double click when popup was opened
-var isMac = /mac/i.test(navigator.platform);
-if (isMac) { // Mac
-	if (!settings.disableDClick && +new Date - localStorage.lastOpened < 600) {
-		bg.console.log('double click popup was opened')///
-		// it'd glitch on Mac if we closed it right away 
-		//setTimeout(window.close, 500);
-	}
-} else { // Windows & Linux
-	if (!settings.disableDClick && +new Date - localStorage.lastClosed < 600) {
-		bg.console.log('double click popup was opened')///
-		// This will trigger a fast close
-		// Just like a double click
-		window.close();
-	}
-}
-*/
-
-
 var pageNo = 0;
 var popupLoaded = false;
 
